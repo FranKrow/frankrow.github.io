@@ -1,110 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Franco Daniel — Developer Portfolio" />
+    <title>Franco Daniel</title>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Frankrow's Page</title>
   </head>
   <body>
-    <div
-      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"
-    >
-      <h5 class="my-0 mr-md-auto font-weight-normal">Frankrow</h5>
-      <!-- <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Enterprise</a>
-        <a class="p-2 text-dark" href="#">Support</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-      </nav> -->
-    </div>
-    <div class="pricing-header px-3 py-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Repos</h1>
-      <p class="lead">
-        Here are some of the repos I've worked on, feel free to explore any of
-        them.
-      </p>
-    </div>
+    <header class="nav">
+      <div class="nav-inner container">
+        <a href="#" class="logo">Franco Daniel</a>
+        <nav class="nav-links">
+          <a href="#projects">Projects</a>
+        </nav>
+      </div>
+    </header>
 
-    <div class="container">
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Keep Moving</h4>
+    <section class="hero">
+      <div class="container hero-inner">
+        <img src="photo.jpg" alt="Franco Daniel" class="hero-photo" />
+        <h1>Hi, I&#8217;m Franco Daniel</h1>
+        <p class="hero-subtitle">Developer &amp; Automation Enthusiast</p>
+        <p class="hero-tagline">
+          Building tools and scripts to make life easier.
+        </p>
+        <p class="hero-bio">
+          I&#8217;m a developer passionate about automation and development.
+          With more than 15 years of experience in the IT industry, I have a
+          strong background in software development and a keen interest in
+          creating efficient solutions. I enjoy creating practical tools that
+          simplify everyday tasks.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="card-header">
+              <h3>Springboot</h3>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring</span>
+                <span class="tag">H2</span>
+                <span class="tag">JPA</span>
+                <span class="tag">Batch</span>
+                <span class="tag">Security</span>
+              </div>
+            </div>
+            <p>
+              App to demostrate how to integrate Batch process and a Rest API in
+              the same app.
+            </p>
+            <a href="/springboot-basic-app" class="btn">View Project</a>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">
-              python <small class="text-muted">/ pyautogui </small>
-            </h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>
-                python script that keeps moving the mouse pointer by drawing
-                somethig on windows paint app
-              </li>
-            </ul>
-            <a
-              class="btn btn-lg btn-outline-success"
-              href="/keep_moving"
-              role="button"
-            >
-              Show Me
-            </a>
+          <div class="project-card">
+            <div class="card-header">
+              <h3>Keep Moving</h3>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyAutoGUI</span>
+              </div>
+            </div>
+            <p>
+              Python script that prevents screen lock by moving the mouse across
+              Windows Paint. An experiment in desktop automation.
+            </p>
+            <a href="/keep_moving" class="btn">View Project</a>
           </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">News feed</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">
-              javascript <small class="text-muted">/ cheerio </small>
-            </h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>
-                Javascript app using nodeJs that gets news data from different
-                sources and shows the newest.
-              </li>
-            </ul>
-            <a
-              class="btn btn-lg btn-outline-success"
-              href="/news-feed"
-              role="button"
-            >
-              Show Me
-            </a>
+          <div class="project-card">
+            <div class="card-header">
+              <h3>News Feed</h3>
+              <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Cheerio</span>
+                <span class="tag">Web Scrapping</span>
+              </div>
+            </div>
+            <p>
+              Node.js application that scrapes news from multiple sources and
+              presents the latest stories in a clean, aggregated feed.
+            </p>
+            <a href="/news-feed" class="btn">View Project</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://github.com/FranKrow"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/danfra"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="mailto:dafc14@hotmail.com" aria-label="Email">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2026 Franco Daniel</p>
+      </div>
+    </footer>
   </body>
 </html>
